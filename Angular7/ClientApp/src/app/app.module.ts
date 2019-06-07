@@ -32,7 +32,7 @@ import { MyComponentComponent } from './folder1/my-component/my-component.compon
         { path: 'fetch-data', component: FetchDataComponent },
         { path: 'hero', component: HerosComponent },
         { path: 'my-component', component: MyComponentComponent },
-    ])
+    ], { useHash: false })
   ],
   providers: [],
   bootstrap: [AppComponent]

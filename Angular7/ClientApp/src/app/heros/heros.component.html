@@ -1,4 +1,14 @@
 <p>
-  heros works! {{hero.id}} {{hero.name}}
+    heros works! {{hero.id}} {{hero.name}}
     <app-my-component></app-my-component>
+
 </p>
+<div>
+    <label>
+        name:
+        <input [(ngModel)]="hero.name" placeholder="name" />
+    </label>
+    <ul>
+        <li *ngFor="let h of heros">{{h.name}}</li>
+    </ul>
+</div>

@@ -5,3 +5,5 @@
 /.vs
 /Angular7/bin
 /Angular7/obj
+/Angular7/ClientApp/src/app/**/*.js
+/Angular7/ClientApp/src/app/**/*.js.map

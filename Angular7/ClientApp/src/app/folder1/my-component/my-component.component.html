@@ -8,4 +8,7 @@
 </ul>
 <button (click)="hero.name='Nhan'">Update hero in child</button>
 <div>username: {{shared.UserName}}</div>
-<button (click)="shared.UserName='Phan Hoang Nhan'">update UserName to Phan Hoang Nhan</button>
+<div>
+    <button (click)="shared.UserName='Phan Hoang Nhan'">update UserName to Phan Hoang Nhan</button>
+</div>
+<ng-content></ng-content>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../models/hero';
+import { Shared } from '../service/shared-service';
 
 @Component({
   selector: 'app-heros',
@@ -8,7 +9,7 @@ import { Hero } from '../models/hero';
 })
 export class HerosComponent implements OnInit {
 
-    constructor() { }
+    constructor(private shared: Shared) { }
     hero: Hero = new Hero();
     heros: Hero[] = [
         { id: 11, name: 'Dr Nice' },

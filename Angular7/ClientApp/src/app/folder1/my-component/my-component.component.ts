@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../../models/hero';
+import { Shared } from '../../service/shared-service';
 
 @Component({
   selector: 'app-my-component',
@@ -9,7 +10,7 @@ import { Hero } from '../../models/hero';
 export class MyComponentComponent implements OnInit {
 
     @Input() hero: Hero;
-  constructor() { }
+    constructor(private shared: Shared) { }
 
     ngOnInit() {
         this.hero.name = "Hoang Nhan";

@@ -11,6 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HerosComponent } from './heros/heros.component';
 import { MyComponentComponent } from './folder1/my-component/my-component.component';
+import { Shared } from './service/shared-service';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { MyComponentComponent } from './folder1/my-component/my-component.compon
         { path: 'my-component', component: MyComponentComponent },
     ], { useHash: false })
   ],
-  providers: [],
+  providers: [Shared],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,7 @@
 <p>
     heros works! {{hero.id}} {{hero.name}}
-    <app-my-component></app-my-component>
+    <app-my-component [hero]="hero"></app-my-component>
+    <button (click)="hero.name='Phan Hoang Nhan'">Update hero in parent</button>
 
 </p>
 <div>

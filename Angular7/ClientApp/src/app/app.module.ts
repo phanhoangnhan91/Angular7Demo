@@ -16,6 +16,7 @@ import { NhanPipe } from './nhan.pipe';
 import {
     UpperCasePipe
 } from '@angular/common';
+import { KhuongComponent } from './khuong/khuong.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {
     FetchDataComponent,
     HerosComponent,
     MyComponentComponent,
-    NhanPipe
+      NhanPipe,
+      KhuongComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -38,6 +40,7 @@ import {
         { path: 'fetch-data', component: FetchDataComponent },
         { path: 'hero', component: HerosComponent },
         { path: 'my-component', component: MyComponentComponent },
+        { path: 'khuong', component: KhuongComponent },
     ], { useHash: false })
   ],
   providers: [Shared],

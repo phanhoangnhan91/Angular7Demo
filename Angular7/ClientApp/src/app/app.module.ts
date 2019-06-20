@@ -12,7 +12,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HerosComponent } from './heros/heros.component';
 import { MyComponentComponent } from './folder1/my-component/my-component.component';
 import { Shared } from './service/shared-service';
-
+import { NhanPipe } from './nhan.pipe';
+import {
+    UpperCasePipe
+} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { Shared } from './service/shared-service';
     CounterComponent,
     FetchDataComponent,
     HerosComponent,
-    MyComponentComponent
+    MyComponentComponent,
+    NhanPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,6 +41,6 @@ import { Shared } from './service/shared-service';
     ], { useHash: false })
   ],
   providers: [Shared],
-  bootstrap: [AppComponent]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
